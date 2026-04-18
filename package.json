@@ -1,0 +1,50 @@
+{
+  "name": "pi-inquisitor",
+  "version": "0.1.0",
+  "description": "Interactive form tool for pi — radio and checkbox questions with AI-powered elaboration",
+  "type": "module",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "Jonas Damtoft",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jomik/pi-inquisitor.git"
+  },
+  "homepage": "https://github.com/Jomik/pi-inquisitor",
+  "keywords": [
+    "pi",
+    "extension",
+    "form",
+    "interactive",
+    "tui",
+    "ask",
+    "inquisitor"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "format": "biome format --write",
+    "test": "vitest run"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "dependencies": {
+    "@mariozechner/pi-ai": "^0.67.68",
+    "@mariozechner/pi-coding-agent": "^0.67.68",
+    "@mariozechner/pi-tui": "^0.67.68",
+    "@sinclair/typebox": "^0.34.49"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.12",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4"
+  }
+}
