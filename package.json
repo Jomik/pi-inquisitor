@@ -1,6 +1,6 @@
 {
   "name": "pi-inquisitor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Interactive form tool for pi — radio and checkbox questions with AI-powered elaboration",
   "type": "module",
   "files": [
@@ -12,7 +12,7 @@
   "author": "Jonas Damtoft",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jomik/pi-inquisitor.git"
+    "url": "git+https://github.com/Jomik/pi-inquisitor.git"
   },
   "homepage": "https://github.com/Jomik/pi-inquisitor",
   "keywords": [
