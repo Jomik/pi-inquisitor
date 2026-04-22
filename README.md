@@ -12,6 +12,12 @@ LLMs ask users questions constantly — which framework, what database, deploy w
 pi install npm:pi-inquisitor
 ```
 
+Or try it without installing:
+
+```bash
+pi -e npm:pi-inquisitor
+```
+
 ## How it works
 
 The LLM calls `ask_user` with a list of questions. Each question is either `radio` (single-select) or `checkbox` (multi-select) with predefined options. The user picks from the options in an interactive TUI form and the result goes back to the LLM as plain text.
