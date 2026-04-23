@@ -1,5 +1,5 @@
 import { StringEnum } from "@mariozechner/pi-ai";
-import { Type } from "@sinclair/typebox";
+import { Type } from "typebox";
 
 const OptionSchema = Type.Object({
   value: Type.String({ description: "Value returned when selected" }),

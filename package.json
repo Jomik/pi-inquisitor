@@ -39,17 +39,17 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.12",
-    "@mariozechner/pi-ai": "^0.67.68",
-    "@mariozechner/pi-coding-agent": "^0.67.68",
-    "@mariozechner/pi-tui": "^0.67.68",
-    "@sinclair/typebox": "^0.34.49",
+    "@mariozechner/pi-ai": "^0.69.0",
+    "@mariozechner/pi-coding-agent": "^0.69.0",
+    "@mariozechner/pi-tui": "^0.69.0",
+    "typebox": "^1.0.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.4"
   },
   "peerDependencies": {
-    "@mariozechner/pi-ai": ">=0.67.0",
-    "@mariozechner/pi-coding-agent": ">=0.67.0",
-    "@mariozechner/pi-tui": ">=0.67.0",
-    "@sinclair/typebox": ">=0.34.0"
+    "@mariozechner/pi-ai": ">=0.69.0",
+    "@mariozechner/pi-coding-agent": ">=0.69.0",
+    "@mariozechner/pi-tui": ">=0.69.0",
+    "typebox": "^1.0.0"
   }
 }
