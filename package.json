@@ -1,6 +1,6 @@
 {
   "name": "pi-inquisitor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "packageManager": "npm@11.12.1",
   "description": "Interactive form tool for pi — radio and checkbox questions with AI-powered elaboration",
   "type": "module",
