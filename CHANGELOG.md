@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/Jomik/pi-inquisitor/compare/v0.2.2...v0.2.3) (2026-04-30)
+
+
+### Bug Fixes
+
+* **ci:** use node-version-file in setup-node to ensure node 24 ([25e4078](https://github.com/Jomik/pi-inquisitor/commit/25e4078ec131b33d98d3be24de58676de83a9211))
+
 ## [0.2.2](https://github.com/Jomik/pi-inquisitor/compare/v0.2.1...v0.2.2) (2026-04-30)
 
 
