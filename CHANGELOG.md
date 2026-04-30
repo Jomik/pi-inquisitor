@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/Jomik/pi-inquisitor/compare/v0.2.1...v0.2.2) (2026-04-30)
+
+
+### Bug Fixes
+
+* **ci:** add .node-version and ensure setup-node uses node 24 for OIDC support ([4847dd7](https://github.com/Jomik/pi-inquisitor/commit/4847dd7b24d904e43a0001e330b0d606f3a94e67))
+
 ## [0.2.1](https://github.com/Jomik/pi-inquisitor/compare/v0.2.0...v0.2.1) (2026-04-30)
 
 
