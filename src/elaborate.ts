@@ -1,4 +1,4 @@
-import type { Message } from "@mariozechner/pi-ai";
+import type { Message } from "@earendil-works/pi-ai";
 import type { NormalizedQuestion, QuestionOption } from "./types.js";
 
 export function buildElaborationContext(
