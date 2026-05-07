@@ -85,7 +85,7 @@ Each option can be elaborated exactly once. Re-pressing `E` is a no-op. This avo
 
 | Package | Purpose |
 |---|---|
-| `@mariozechner/pi-coding-agent` | ExtensionAPI, tool registration |
-| `@mariozechner/pi-tui` | Editor, Key, Text, theme utilities |
-| `@mariozechner/pi-ai` | streamSimple, StringEnum, Message types |
+| `@earendil-works/pi-coding-agent` | ExtensionAPI, tool registration |
+| `@earendil-works/pi-tui` | Editor, Key, Text, theme utilities |
+| `@earendil-works/pi-ai` | streamSimple, StringEnum, Message types |
 | `@sinclair/typebox` | Parameter schema definitions |

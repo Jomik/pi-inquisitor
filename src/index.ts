@@ -27,10 +27,17 @@
  *   - Esc to cancel
  */
 
-import type { Message, SimpleStreamOptions } from "@mariozechner/pi-ai";
-import { streamSimple } from "@mariozechner/pi-ai";
-import type { ExtensionAPI, ThemeColor } from "@mariozechner/pi-coding-agent";
-import { Editor, type EditorTheme, Text, truncateToWidth, visibleWidth, wrapTextWithAnsi } from "@mariozechner/pi-tui";
+import type { Message, SimpleStreamOptions } from "@earendil-works/pi-ai";
+import { streamSimple } from "@earendil-works/pi-ai";
+import type { ExtensionAPI, ThemeColor } from "@earendil-works/pi-coding-agent";
+import {
+  Editor,
+  type EditorTheme,
+  Text,
+  truncateToWidth,
+  visibleWidth,
+  wrapTextWithAnsi,
+} from "@earendil-works/pi-tui";
 
 import { buildElaborationContext } from "./elaborate.js";
 import type { FormDeps } from "./form-state.js";
