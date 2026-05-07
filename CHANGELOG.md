@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0](https://github.com/Jomik/pi-inquisitor/compare/v0.2.3...v0.3.0) (2026-05-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate npm scope from @mariozechner to @earendil-works ([#5](https://github.com/Jomik/pi-inquisitor/issues/5))
+
+### Features
+
+* migrate npm scope from [@mariozechner](https://github.com/mariozechner) to [@earendil-works](https://github.com/earendil-works) ([#5](https://github.com/Jomik/pi-inquisitor/issues/5)) ([82ddd2c](https://github.com/Jomik/pi-inquisitor/commit/82ddd2c30bb91ece44b647c171f86de20c32c7ba))
+
 ## [0.2.3](https://github.com/Jomik/pi-inquisitor/compare/v0.2.2...v0.2.3) (2026-04-30)
 
 
