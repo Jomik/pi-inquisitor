@@ -39,7 +39,7 @@ import {
   wrapTextWithAnsi,
 } from "@earendil-works/pi-tui";
 
-import { buildElaborationContext } from "./elaborate.js";
+import { buildElaborationContext, resolveRequestModel } from "./elaborate.js";
 import type { FormDeps } from "./form-state.js";
 import { FormState } from "./form-state.js";
 import { errorResult, normalize, validateQuestions } from "./helpers.js";
@@ -181,6 +181,7 @@ export default function piInquisitor(pi: ExtensionAPI) {
               state.elaborations.set(key, "(auth failed)");
               return;
             }
+            const effectiveModel = resolveRequestModel(model, auth);
             const timeoutSignal = AbortSignal.timeout(15_000);
             const combinedSignal = AbortSignal.any([elabAbort.signal, timeoutSignal]);
             const streamOpts: SimpleStreamOptions = {
@@ -188,7 +189,7 @@ export default function piInquisitor(pi: ExtensionAPI) {
               ...(auth.headers ? { headers: auth.headers } : {}),
               signal: combinedSignal,
             };
-            const stream = streamSimple(model, { systemPrompt, messages }, streamOpts);
+            const stream = streamSimple(effectiveModel, { systemPrompt, messages }, streamOpts);
             let streamError: string | undefined;
             for await (const event of stream) {
               if (event.type === "text_delta") {

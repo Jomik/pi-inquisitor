@@ -1,6 +1,10 @@
 import type { Message } from "@earendil-works/pi-ai";
 import type { NormalizedQuestion, QuestionOption } from "./types.js";
 
+export function resolveRequestModel<T extends { baseUrl: string }>(model: T, auth: object): T {
+  return "baseUrl" in auth && typeof auth.baseUrl === "string" ? { ...model, baseUrl: auth.baseUrl } : model;
+}
+
 export function buildElaborationContext(
   sessionSystemPrompt: string,
   conversationMessages: Message[],

@@ -1,6 +1,6 @@
 import type { Message } from "@earendil-works/pi-ai";
 import { describe, expect, it } from "vitest";
-import { buildElaborationContext } from "../src/elaborate.js";
+import { buildElaborationContext, resolveRequestModel } from "../src/elaborate.js";
 import type { NormalizedQuestion, QuestionOption } from "../src/types.js";
 
 const baseQuestion: NormalizedQuestion = {
@@ -85,5 +85,15 @@ describe("buildElaborationContext", () => {
     expect(systemPrompt).toContain("Pros:");
     expect(systemPrompt).toContain("Cons:");
     expect(systemPrompt).toContain("Best when:");
+  });
+});
+
+describe("resolveRequestModel", () => {
+  it("uses a baseUrl resolved during authentication", () => {
+    const model = { baseUrl: "https://api.githubcopilot.com" };
+
+    expect(resolveRequestModel(model, { baseUrl: "https://copilot-api.example.com" }).baseUrl).toBe(
+      "https://copilot-api.example.com",
+    );
   });
 });
