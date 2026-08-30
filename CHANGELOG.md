@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0](https://github.com/Jomik/pi-inquisitor/compare/v0.3.0...v0.4.0) (2026-08-30)
+
+
+### Features
+
+* report ask_user as blocked to herdr ([#9](https://github.com/Jomik/pi-inquisitor/issues/9)) ([72e87dc](https://github.com/Jomik/pi-inquisitor/commit/72e87dc91dbcdbb401ff638c4b6fedaa9f2d14c2))
+
+
+### Bug Fixes
+
+* honor resolved base URL for elaboration ([#7](https://github.com/Jomik/pi-inquisitor/issues/7)) ([c8e78f0](https://github.com/Jomik/pi-inquisitor/commit/c8e78f0dd21c1204c5e4114258e8c1da67138a8b))
+
 ## [0.3.0](https://github.com/Jomik/pi-inquisitor/compare/v0.2.3...v0.3.0) (2026-05-07)
 
 
