@@ -122,7 +122,7 @@ export default function piInquisitor(pi: ExtensionAPI) {
 
       const questions = normalize(params.questions as Question[]);
 
-      const result = await ctx.ui.custom<FormResult>((tui, theme, _kb, done) => {
+      const pendingResult = ctx.ui.custom<FormResult>((tui, theme, _kb, done) => {
         // ── Editor setup ──────────────────────────────────────
         const editorTheme: EditorTheme = {
           borderColor: (s) => theme.fg("accent", s),
@@ -527,6 +527,12 @@ export default function piInquisitor(pi: ExtensionAPI) {
           handleInput: (data: string) => state.handleInput(data),
         };
       });
+
+      pi.events.emit("herdr:blocked", {
+        active: true,
+        label: params.title ? `Answer: ${params.title}` : "Answer agent question",
+      });
+      const result = await pendingResult.finally(() => pi.events.emit("herdr:blocked", { active: false }));
 
       // ── Format result ────────────────────────────────────────
 
